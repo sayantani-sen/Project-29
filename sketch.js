@@ -104,4 +104,11 @@ function draw(){
 
     
 }
+function mouseDragged(){
+	Matter.Body.setPosition(polygon.body,{x:mouseX,y:mouseY});
+}
+function mouseReleased(){
+    slingShot.fly();
+}
+
 
